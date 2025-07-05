@@ -1,0 +1,32 @@
+{
+  "name": "safetalk",
+  "version": "1.0.0",
+  "description": "AI-powered digital care platform for cyberbullying detection and mental health support",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'Development setup ready. Use docker-compose up -d to start services.'",
+    "setup": "cp .env.example .env && echo 'Please edit .env file with your configuration'",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "test": "echo 'Tests will be added in development phase'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/[username]/SafeTalk.git"
+  },
+  "keywords": [
+    "AI",
+    "mental-health",
+    "cyberbullying",
+    "emotion-analysis",
+    "chatbot",
+    "japanese",
+    "react",
+    "fastapi"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}

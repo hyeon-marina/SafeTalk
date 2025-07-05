@@ -1,0 +1,29 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-structure:
+    runs-on: ubuntu-latest
+    name: Validate Project Structure
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Check required files
+      run: |
+        echo "Checking project structure..."
+        test -f README.md && echo "✅ README.md exists"
+        test -f package.json && echo "✅ package.json exists"
+        test -f docker-compose.yml && echo "✅ docker-compose.yml exists"
+        test -f .env.example && echo "✅ .env.example exists"
+        test -d frontend && echo "✅ frontend directory exists"
+        test -d backend && echo "✅ backend directory exists"
+        test -d ml && echo "✅ ml directory exists"
+        echo "🎉 Project structure validation complete!"
+        
+  # 추후 백엔드, 프론트엔드 테스트 job 추가 예정
