@@ -1,0 +1,60 @@
+# FastAPI 웹 프레임워크
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# 데이터베이스
+sqlalchemy==2.0.23
+alembic==1.12.1
+asyncpg==0.29.0  # PostgreSQL 비동기 드라이버
+psycopg2-binary==2.9.9  # PostgreSQL 동기 드라이버
+
+# Redis
+redis==5.0.1
+aioredis==2.0.1
+
+# 환경설정
+pydantic==2.5.0
+pydantic-settings==2.0.3
+python-dotenv==1.0.0
+
+# 보안 및 인증
+python-jose[cryptography]==3.3.0
+python-multipart==0.0.6
+bcrypt==4.0.1
+passlib[bcrypt]==1.7.4
+
+# HTTP 클라이언트
+httpx==0.25.2
+aiohttp==3.9.1
+
+# AI/ML 관련
+openai==1.3.7
+transformers==4.35.2
+torch==2.1.1
+tokenizers==0.15.0
+
+# 일본어 NLP
+mecab-python3==1.0.6
+jaconv==0.3.4
+
+# 백그라운드 작업
+celery==5.3.4
+kombu==5.3.4
+
+# 유틸리티
+python-json-logger==2.0.7
+structlog==23.2.0
+tenacity==8.2.3
+
+# 개발/테스트 도구
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0
+mypy==1.7.1
+
+# 타입 힌트
+types-redis==4.6.0.11
+types-requests==2.31.0.10

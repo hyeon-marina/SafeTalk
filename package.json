@@ -27,6 +27,9 @@
   "author": "Your Name",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^24.1.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
     "concurrently": "^8.0.0"
   }
 }
