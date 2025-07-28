@@ -206,12 +206,17 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# .gitignore에 추가
 echo "" >> .gitignore
-echo "# Application configuration files" >> .gitignore
+echo "# Application configuration" >> .gitignore  
 echo "application.yml" >> .gitignore
-echo "application.yaml" >> .gitignore
+echo "application-*.yml" >> .gitignore
 
-# 이미 커밋된 경우 Git 캐시에서 제거
-git rm --cached application.yml
+
+# Application configuration
+application.yml
+application-*.yml
+
+# Application configuration
+application.yml
+application-*.yml
 application.yml
